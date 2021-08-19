@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Currency Converter</title>
+</head>
+<script defer src="index.js"></script>
+
+<body>
+  <div class="converter">
+    <h1>Currency Converter</h1>
+    <br>
+    <p id='message' style="color: #f44336;"><i class="fa fa-info-circle"></i></p>
+    <p style="color: #f94144;">
+      CONVERT
+      <input type="number" id="original-currency-amount" placeholder="1">
+      <input type="text" id="original-currency-unit" readonly placeholder="original currency">
+
+      </input>
+      TO
+      <select id="from_currency" class="select-option" onchange="changeExchangeRate()">
+        <option value="">Select Currency</option>
+      </select>
+    </p>
+    <p>
+      Exchange Rate:
+      <input type="number" readonly id="exchange-rate"></input>
+    </p>
+    <button id="exchangeBtn" class="btn">Exchange my money now!</button>
+    <p id="feedback"></p>
+
+
+  </div>
+</body>
+
+</html>
